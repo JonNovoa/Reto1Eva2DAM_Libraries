@@ -10,5 +10,32 @@ package clases;
  * @author somor
  */
 public class Message {
+    private Client cliente;
+    private Enum orden;
+
+    public Message() {
+        
+    }
+
+    public void setCliente(Client cliente) {
+        this.cliente = cliente;
+    }
+
+    public void setOrden(Enum orden) {
+        this.orden = orden;
+    }
+
+    public Client getCliente() {
+        return cliente;
+    }
+
+    public Enum getOrden() {
+        return orden;
+    }
+    
+    public void makeMessage(Client cliente, Enum orden){
+        this.cliente = cliente;
+        this.orden = orden;
+    }
     
 }
