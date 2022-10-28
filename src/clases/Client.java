@@ -91,6 +91,13 @@ public class Client {
         this.lastPasswdChange = lastPasswdChange;
     }
     
+    /**
+     * Inserta los datos del cliente introducidos en la ventana de Sign Up
+     * @param login
+     * @param email
+     * @param fullName
+     * @param passwd 
+     */
     public void setDatos(String login, String email,String fullName, String passwd) {
         this.login = login;
         this.email = email;

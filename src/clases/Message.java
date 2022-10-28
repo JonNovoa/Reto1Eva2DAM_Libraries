@@ -33,6 +33,11 @@ public class Message {
         return orden;
     }
     
+    /**
+     * Crea el mensaje con el User y la Orden del servidor
+     * @param cliente
+     * @param orden 
+     */
     public void makeMessage(Client cliente, Enum orden){
         this.cliente = cliente;
         this.orden = orden;
