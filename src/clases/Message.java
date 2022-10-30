@@ -11,7 +11,7 @@ package clases;
  */
 public class Message {
     private Client cliente;
-    private Enum orden;
+    private Enum ORDER;
 
     public Message() {
         
@@ -21,8 +21,8 @@ public class Message {
         this.cliente = cliente;
     }
 
-    public void setOrden(Enum orden) {
-        this.orden = orden;
+    public void setOrden(Enum ORDEN) {
+        this.ORDER = ORDEN;
     }
 
     public Client getCliente() {
@@ -30,17 +30,17 @@ public class Message {
     }
 
     public Enum getOrden() {
-        return orden;
+        return ORDER;
     }
     
     /**
      * Crea el mensaje con el User y la Orden del servidor
      * @param cliente
-     * @param orden 
+     * @param ORDEN 
      */
-    public void makeMessage(Client cliente, Enum orden){
+    public void makeMessage(Client cliente, Enum ORDER){
         this.cliente = cliente;
-        this.orden = orden;
+        this.ORDER = ORDER;
     }
     
 }
