@@ -9,7 +9,6 @@ import static clases.UserPrivilege.USER;
 import static clases.UserStatus.ENABLED;
 import java.io.Serializable;
 import java.security.Timestamp;
-import java.time.LocalDate;
 
 /**
  *

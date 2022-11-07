@@ -5,10 +5,11 @@
  */
 package clases;
 
+
 /**
  *
  * @author INFORMATICA
  */
-public enum Order {
+public enum Order{
     IN, UP
 }

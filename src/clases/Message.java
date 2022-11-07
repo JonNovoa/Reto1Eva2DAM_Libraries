@@ -12,13 +12,15 @@ import java.io.Serializable;
  * @author somor
  */
 public class Message implements Serializable{
+    static final long serialVersionUID = 8467924406848233931L;
+    
     private Client cliente;
-    private Enum ORDER;
+    private Order ORDER;
 
     public Message() {
         
     }
-        public Message(Client cliente, Enum ORDER) {
+        public Message(Client cliente, Order ORDER) {
         this.cliente = cliente;
         this.ORDER = ORDER;
         
@@ -28,7 +30,7 @@ public class Message implements Serializable{
         this.cliente = cliente;
     }
 
-    public void setOrden(Enum ORDEN) {
+    public void setOrden(Order ORDEN) {
         this.ORDER = ORDEN;
     }
 
@@ -45,7 +47,7 @@ public class Message implements Serializable{
      * @param cliente
      * @param ORDEN 
      */
-    public void makeMessage(Client cliente, Enum ORDER){
+    public void makeMessage(Client cliente, Order ORDER){
 
         this.cliente = cliente;
         this.ORDER = ORDER;
