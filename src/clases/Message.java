@@ -5,15 +5,22 @@
  */
 package clases;
 
+import java.io.Serializable;
+
 /**
  *
  * @author somor
  */
-public class Message {
+public class Message implements Serializable{
     private Client cliente;
     private Enum ORDER;
 
     public Message() {
+        
+    }
+        public Message(Client cliente, Enum ORDER) {
+        this.cliente = cliente;
+        this.ORDER = ORDER;
         
     }
 
@@ -39,6 +46,7 @@ public class Message {
      * @param ORDEN 
      */
     public void makeMessage(Client cliente, Enum ORDER){
+
         this.cliente = cliente;
         this.ORDER = ORDER;
     }

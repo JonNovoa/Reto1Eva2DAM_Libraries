@@ -7,6 +7,7 @@ package clases;
 
 import static clases.UserPrivilege.USER;
 import static clases.UserStatus.ENABLED;
+import java.io.Serializable;
 import java.security.Timestamp;
 import java.time.LocalDate;
 
@@ -14,7 +15,7 @@ import java.time.LocalDate;
  *
  * @author somor
  */
-public class Client {
+public class Client implements Serializable{
     private int id;
     private String login;
     private String email;
