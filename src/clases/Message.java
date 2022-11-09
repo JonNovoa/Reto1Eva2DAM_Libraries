@@ -16,6 +16,7 @@ public class Message implements Serializable{
     
     private Client cliente;
     private Order ORDER;
+    private AnswerEnumeration RESPUESTA;
 
     public Message() {
         
@@ -30,17 +31,27 @@ public class Message implements Serializable{
         this.cliente = cliente;
     }
 
-    public void setOrden(Order ORDEN) {
-        this.ORDER = ORDEN;
-    }
-
     public Client getCliente() {
         return cliente;
     }
 
-    public Enum getOrden() {
+    public Order getORDER() {
         return ORDER;
     }
+
+    public void setORDER(Order ORDER) {
+        this.ORDER = ORDER;
+    }
+
+    public AnswerEnumeration getRESPUESTA() {
+        return RESPUESTA;
+    }
+
+    public void setRESPUESTA(AnswerEnumeration RESPUESTA) {
+        this.RESPUESTA = RESPUESTA;
+    }
+    
+
     
     /**
      * Crea el mensaje con el User y la Orden del servidor
@@ -51,6 +62,7 @@ public class Message implements Serializable{
 
         this.cliente = cliente;
         this.ORDER = ORDER;
+        this.RESPUESTA=null;
     }
     
 }
