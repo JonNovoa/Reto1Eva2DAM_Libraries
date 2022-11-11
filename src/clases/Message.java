@@ -17,6 +17,7 @@ public class Message implements Serializable{
     private Client cliente;
     private Order ORDER;
     private AnswerEnumeration RESPUESTA;
+    private String cerrar; 
 
     public Message() {
         
@@ -38,6 +39,15 @@ public class Message implements Serializable{
     public Order getORDER() {
         return ORDER;
     }
+
+    public String getCerrar() {
+        return cerrar;
+    }
+
+    public void setCerrar(String cerrar) {
+        this.cerrar = cerrar;
+    }
+    
 
     public void setORDER(Order ORDER) {
         this.ORDER = ORDER;
@@ -63,6 +73,7 @@ public class Message implements Serializable{
         this.cliente = cliente;
         this.ORDER = ORDER;
         this.RESPUESTA=null;
+        
     }
     
 }
